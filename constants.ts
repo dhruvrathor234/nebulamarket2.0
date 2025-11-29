@@ -1,0 +1,102 @@
+
+
+export const INITIAL_BALANCE = 50000; // USD
+export const CRON_INTERVAL_MS = 30000; // Run analysis every 30 seconds
+export const PRICE_TICK_INTERVAL_MS = 1000; // Update chart price every second
+
+export const ASSETS = {
+  // --- COMMODITIES ---
+  XAUUSD: {
+    NAME: "Gold",
+    INITIAL_PRICE: 2750.00,
+    CONTRACT_SIZE: 100, // 1 Lot = 100 oz
+    PIP_VALUE: 10,
+    DEFAULT_STOP_LOSS: 5.00,
+    DEFAULT_TAKE_PROFIT: 10.00
+  },
+  // --- CRYPTO ---
+  BTCUSD: {
+    NAME: "Bitcoin",
+    INITIAL_PRICE: 97000.00,
+    CONTRACT_SIZE: 1, // 1 Lot = 1 BTC
+    PIP_VALUE: 1, 
+    DEFAULT_STOP_LOSS: 500.00,
+    DEFAULT_TAKE_PROFIT: 1000.00
+  },
+  ETHUSD: {
+    NAME: "Ethereum",
+    INITIAL_PRICE: 3350.00,
+    CONTRACT_SIZE: 10, 
+    PIP_VALUE: 1, 
+    DEFAULT_STOP_LOSS: 25.00,
+    DEFAULT_TAKE_PROFIT: 50.00
+  },
+  SOLUSD: {
+    NAME: "Solana",
+    INITIAL_PRICE: 145.00,
+    CONTRACT_SIZE: 100,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 2.00,
+    DEFAULT_TAKE_PROFIT: 5.00
+  },
+  DOGEUSD: {
+    NAME: "Dogecoin",
+    INITIAL_PRICE: 0.35,
+    CONTRACT_SIZE: 10000,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 0.01,
+    DEFAULT_TAKE_PROFIT: 0.02
+  },
+  // --- FOREX ---
+  EURUSD: {
+    NAME: "EUR/USD",
+    INITIAL_PRICE: 1.0500,
+    CONTRACT_SIZE: 100000, // Standard Lot
+    PIP_VALUE: 10,
+    DEFAULT_STOP_LOSS: 0.0050,
+    DEFAULT_TAKE_PROFIT: 0.0100
+  },
+  GBPUSD: {
+    NAME: "GBP/USD",
+    INITIAL_PRICE: 1.2600,
+    CONTRACT_SIZE: 100000,
+    PIP_VALUE: 10,
+    DEFAULT_STOP_LOSS: 0.0050,
+    DEFAULT_TAKE_PROFIT: 0.0100
+  },
+  // --- US MARKET ---
+  US500: {
+    NAME: "S&P 500",
+    INITIAL_PRICE: 5900.00,
+    CONTRACT_SIZE: 10,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 20.00,
+    DEFAULT_TAKE_PROFIT: 40.00
+  },
+  US100: {
+    NAME: "Nasdaq 100",
+    INITIAL_PRICE: 20500.00,
+    CONTRACT_SIZE: 10,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 50.00,
+    DEFAULT_TAKE_PROFIT: 100.00
+  },
+  TSLA: {
+    NAME: "Tesla",
+    INITIAL_PRICE: 350.00,
+    CONTRACT_SIZE: 10,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 5.00,
+    DEFAULT_TAKE_PROFIT: 10.00
+  },
+  NVDA: {
+    NAME: "Nvidia",
+    INITIAL_PRICE: 140.00,
+    CONTRACT_SIZE: 10,
+    PIP_VALUE: 1,
+    DEFAULT_STOP_LOSS: 3.00,
+    DEFAULT_TAKE_PROFIT: 6.00
+  }
+};
+
+export const SIMULATION_DISCLAIMER = "This is a PAPER TRADING simulation. No real money is involved.";
